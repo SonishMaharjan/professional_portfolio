@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h3>hello world i</h3>
+    <ProfessionalPage></ProfessionalPage>
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -8,6 +8,16 @@
     <router-view/>-->
   </div>
 </template>
+
+<script>
+import ProfessionalPage from "@/views/ProfessionalPage";
+export default {
+  name: "App",
+  components: {
+    ProfessionalPage
+  }
+};
+</script>
 
 <style>
 #app {

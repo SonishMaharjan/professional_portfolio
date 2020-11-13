@@ -6,6 +6,10 @@ import store from "./store";
 import "@/assets/styles/index.scss";
 import "bootstrap";
 
+import Scrollspy from "vue2-scrollspy";
+// use default options
+Vue.use(Scrollspy);
+
 Vue.config.productionTip = false;
 
 new Vue({
