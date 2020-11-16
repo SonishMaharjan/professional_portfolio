@@ -7,12 +7,9 @@
       <span class="quote-right-wrapper">
         <font-awesome-icon :icon="['fas', 'quote-right']" :style="{}" />
       </span>
-      Hello! I'm
+      <div class="post-title">Software Engineer</div>Hello! I'm
       <span class="name">Sonish.</span>
       Welcome to my World!
-    </div>
-    <div class="post-title-wrapper">
-      <div class="post-title">Software Engineer</div>
     </div>
     <div class="profile-image-wrapper">
       <img class="profile-image" :src="require(`@/assets/images/${homeData.profileImage}`)" alt />
@@ -92,6 +89,7 @@ export default {
     width: 20rem;
     // border: 2px solid yellow;
     align-self: center;
+    margin-bottom: 2rem;
     position: relative;
     .name {
       // color: #7e7d80;
@@ -115,22 +113,24 @@ export default {
       right: 0;
       margin-bottom: -1rem;
     }
-  }
-
-  .post-title-wrapper {
-    position: relative;
-    margin-bottom: 1rem;
-    width: 20rem;
-    // border: 2px solid red;
-    align-self: center;
 
     .post-title {
       color: white;
       position: absolute;
       font-family: "Poppins", sans-serif;
-      top: 0.8rem;
+      bottom: -2.5rem;
       right: 0rem;
+      font-size: 1rem;
     }
   }
+
+  // .post-title-wrapper {
+  //   position: relative;
+  //   margin-bottom: 1rem;
+  //   width: 20rem;
+  //   // border: 2px solid red;
+  //   align-self: center;
+
+  // }
 }
 </style>
