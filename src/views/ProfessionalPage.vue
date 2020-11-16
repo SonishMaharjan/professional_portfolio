@@ -2,10 +2,9 @@
   <div class="professional-page-wrapper">
     <Navbar></Navbar>
 
-    <div v-scroll-spy>
-      <div style="height: 500px">
-        <h1>Header 1</h1>
-        <p>Content</p>
+    <div class="professional-page-container" v-scroll-spy="{offset: 60}">
+      <div class="home-section" style="height: 500px">
+        <Home :homeData="homeData"></Home>
       </div>
       <div style="height: 500px">
         <h1>Header 2</h1>
@@ -47,8 +46,16 @@ import {
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 
-import { faDesktop } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDesktop,
+  faQuoteRight,
+  faQuoteLeft
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+import Home from "@/components/professional-page/Home";
+
+import data from "@/.data/data.js";
 
 library.add(
   faLinkedin,
@@ -57,14 +64,27 @@ library.add(
   faFacebook,
   faSkype,
   faInstagram,
-  faDesktop
+  faDesktop,
+  faQuoteRight,
+  faQuoteLeft
 );
 // library.add(faLinkedin);
 
 export default {
   name: "ProfessionalPage",
-  components: { Navbar, FontAwesomeIcon }
+  components: { Navbar, Home, FontAwesomeIcon },
+  data() {
+    return {
+      homeData: { profileImage: data.profileImage, profileText: "" }
+    };
+  }
 };
 </script>
 
-<style></style>
+<style scoped lang="scss">
+.professional-page-wrapper {
+  .professional-page-container {
+    margin-top: 3.5rem;
+  }
+}
+</style>

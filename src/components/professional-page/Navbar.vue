@@ -31,33 +31,17 @@
             <NavItem label="Contact"></NavItem>
           </ul>
 
-          <div
-            class="my-2 d-flex flex my-lg-0 justify-content-center icons-wrapper"
-          >
-            <IconLink
-              href="https://www.linkedin.com/in/sonish-maharjan/"
-              targetBlank
-            >
-              <font-awesome-icon
-                :icon="['fab', 'linkedin']"
-                class="icon linkedin-icon"
-              />
+          <div class="my-2 d-flex flex my-lg-0 justify-content-center icons-wrapper">
+            <IconLink href="https://www.linkedin.com/in/sonish-maharjan/" targetBlank>
+              <font-awesome-icon :icon="['fab', 'linkedin']" class="icon linkedin-icon" />
             </IconLink>
 
             <IconLink href="https://github.com/SonishMaharjan/" targetBlank>
-              <font-awesome-icon
-                :icon="['fab', 'github']"
-                class="icon github-icon"
-              />
+              <font-awesome-icon :icon="['fab', 'github']" class="icon github-icon" />
             </IconLink>
           </div>
 
-          <button
-            class="btn btn-outline-light my-2 my-sm-0 resume-button"
-            type="submit"
-          >
-            Resume
-          </button>
+          <button class="btn btn-outline-light my-2 my-sm-0 resume-button" type="submit">Resume</button>
         </div>
       </div>
     </nav>
@@ -116,7 +100,7 @@ span {
 }
 
 .resume-button {
-  color: black;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   // font-size: 2rem;
   font-weight: 1000 !important;

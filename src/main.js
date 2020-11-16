@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-import "@/assets/styles/index.scss";
+// import "@/assets/styles/index.scss";
 import "bootstrap";
 
 import Scrollspy from "vue2-scrollspy";
