@@ -12,7 +12,11 @@
       Welcome to my World!
     </div>
     <div class="profile-image-wrapper">
-      <img class="profile-image" :src="require(`@/assets/images/${homeData.profileImage}`)" alt />
+      <img
+        class="profile-image"
+        :src="require(`@/assets/images/${homeData.profileImage}`)"
+        alt="Profile Image"
+      />
     </div>
   </div>
 </template>
@@ -94,7 +98,7 @@ export default {
 
   .profile-text-wrapper {
     // border: 2px solid yellow;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 2rem;
     // color: #7e7d80;
     background-color: rgba(155, 155, 155, 0.1);

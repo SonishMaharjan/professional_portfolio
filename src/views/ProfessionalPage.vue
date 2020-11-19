@@ -2,13 +2,12 @@
   <div class="professional-page-wrapper">
     <Navbar></Navbar>
 
-    <div class="professional-page-container" v-scroll-spy="{offset: 60}">
-      <div class="home-section" style="height: 500px">
+    <div class="professional-page-container" v-scroll-spy="{offset: 80}">
+      <div class="section home-section">
         <Home :homeData="homeData"></Home>
       </div>
-      <div style="height: 500px">
-        <h1>Header 2</h1>
-        <p>Content</p>
+      <div class="section" style="height: 500px">
+        <About :aboutData="aboutData"></About>
       </div>
       <div style="height: 500px">
         <h1>Header 2</h1>
@@ -54,6 +53,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import Home from "@/components/professional-page/Home";
+import About from "@/components/professional-page/About";
 
 import data from "@/.data/data.js";
 
@@ -72,10 +72,16 @@ library.add(
 
 export default {
   name: "ProfessionalPage",
-  components: { Navbar, Home, FontAwesomeIcon },
+  components: { Navbar, Home, FontAwesomeIcon, About },
   data() {
     return {
-      homeData: { profileImage: data.profileImage, profileText: "" }
+      homeData: {
+        profileImage: data.profileImage,
+        profileText: ""
+      },
+      aboutData: {
+        techLogos: data.techLogos
+      }
     };
   }
 };
@@ -85,6 +91,11 @@ export default {
 .professional-page-wrapper {
   .professional-page-container {
     margin-top: 3.5rem;
+
+    .section {
+      margin: 3rem 0;
+      // border: 2px solid red;
+    }
   }
 }
 </style>
