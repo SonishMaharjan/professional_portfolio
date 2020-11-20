@@ -6,18 +6,18 @@
       <div class="section home-section">
         <Home :homeData="homeData"></Home>
       </div>
-      <div class="section" style="height: 500px">
+      <div class="section">
         <About :aboutData="aboutData"></About>
       </div>
-      <div style="height: 500px">
+      <div>
         <h1>Header 2</h1>
         <p>Porgfoki</p>
       </div>
-      <div style="height: 500px">
+      <div>
         <h1>Header 2</h1>
         <p>blog</p>
       </div>
-      <div style="height: 500px">
+      <div>
         <h1>Header 2</h1>
         <p>C contack</p>
       </div>
@@ -80,7 +80,9 @@ export default {
         profileText: ""
       },
       aboutData: {
-        techLogos: data.techLogos
+        techLogos: data.techLogos,
+        skills: data.skills,
+        education: data.education
       }
     };
   }

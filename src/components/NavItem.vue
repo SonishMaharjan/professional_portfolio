@@ -1,6 +1,6 @@
 <template>
   <li class="nav-item">
-    <a class="nav-link custom-link " :href="href">{{ label }}</a>
+    <a class="nav-link custom-link" :href="href">{{ label }}</a>
   </li>
 </template>
 
@@ -28,7 +28,7 @@ export default {
     font-weight: bold;
 
     &.custom-link {
-      color: #938cb9;
+      color: $custom-light-blue;
 
       &:hover {
         cursor: pointer;

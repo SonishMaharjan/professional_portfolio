@@ -1,6 +1,6 @@
 <template>
   <div class="about-wrapper">
-    <div class="work-with">
+    <div class="work-with container">
       <h3 class="work-with-title">I Work With</h3>
       <ul class="work-with-list">
         <li
@@ -12,15 +12,27 @@
         </li>
       </ul>
     </div>
-    <div class="work-description">
-      <h2>About me</h2>
+    <div class="about-me-section-wrapper">
+      <div class="about-me-left">
+        <h2 class="about-me-title">About me</h2>
+        <p
+          class="about-me-description"
+        >Hi, I'm full stack engineer from Kathmandu, Nepal with about 2 years of experience in software development.</p>
+      </div>
+      <div class="about-me-right">
+        <div class="tab-content">
+          <TabsContent :skills="aboutData.skills" :education="aboutData.education"></TabsContent>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import TabsContent from "@/components/tabs-content/TabsContent";
 export default {
   name: "About",
+  components: { TabsContent },
   props: {
     aboutData: {
       type: Object,
@@ -34,6 +46,8 @@ export default {
 .about-wrapper {
   .work-with-title {
     font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: $primary;
   }
   .work-with-list {
     list-style: none;
@@ -50,6 +64,44 @@ export default {
         max-height: 100%;
         object-fit: cover;
       }
+    }
+  }
+
+  .about-me-section-wrapper {
+    // height: 100%;
+    background: $primary;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+
+    .about-me-left {
+      // flex-basis: 100%;
+      // color: red;
+
+      .about-me-title {
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        position: relative;
+        text-align: left;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 2.5rem;
+          bottom: 0;
+          border-bottom: 5px solid #eee;
+          width: 2rem;
+        }
+      }
+
+      .about-me-description {
+        margin: 2rem 0;
+        text-align: left;
+      }
+    }
+    .about-me-right {
+      // width: 100%;
     }
   }
 }
