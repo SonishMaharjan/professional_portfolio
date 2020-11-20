@@ -75,9 +75,22 @@ export default {
     flex-direction: column;
     padding: 2rem 3rem;
 
+    @include md {
+      flex-direction: row;
+      justify-content: space-evenly;
+      // align-items: center;
+    }
+
     .about-me-left {
       // flex-basis: 100%;
       // color: red;
+      @include md {
+        width: 30%;
+        // height: 30%;
+        // align-items: center;
+        // border: 2px solid yellow;
+        // padding-right: 2rem;
+      }
 
       .about-me-title {
         font-weight: bold;
@@ -102,6 +115,11 @@ export default {
     }
     .about-me-right {
       // width: 100%;
+      @include md {
+        width: 50%;
+        // padding-right: 2rem;
+        // border: 2px solid red;
+      }
     }
   }
 }
