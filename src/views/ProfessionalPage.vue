@@ -18,8 +18,7 @@
         <p>blog</p>
       </div>
       <div>
-        <h1>Header 2</h1>
-        <p>C contack</p>
+        <Contact></Contact>
       </div>
     </div>
     <font-awesome-icon :icon="['fab', 'linkedin']" />
@@ -54,6 +53,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import Home from "@/components/professional-page/Home";
 import About from "@/components/professional-page/About";
+import Contact from "@/components/professional-page/Contact";
 
 import data from "@/.data/data.js";
 
@@ -72,7 +72,7 @@ library.add(
 
 export default {
   name: "ProfessionalPage",
-  components: { Navbar, Home, FontAwesomeIcon, About },
+  components: { Navbar, Home, FontAwesomeIcon, About, Contact },
   data() {
     return {
       homeData: {
