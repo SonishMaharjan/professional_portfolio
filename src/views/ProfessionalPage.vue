@@ -10,8 +10,7 @@
         <About :aboutData="aboutData"></About>
       </div>
       <div>
-        <h1>Header 2</h1>
-        <p>Porgfoki</p>
+        <Projects></Projects>
       </div>
       <div>
         <h1>Header 2</h1>
@@ -54,6 +53,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import Home from "@/components/professional-page/Home";
 import About from "@/components/professional-page/About";
 import Contact from "@/components/professional-page/Contact";
+import Projects from "@/components/professional-page/Projects";
 
 import data from "@/.data/data.js";
 
@@ -72,7 +72,7 @@ library.add(
 
 export default {
   name: "ProfessionalPage",
-  components: { Navbar, Home, FontAwesomeIcon, About, Contact },
+  components: { Navbar, Home, FontAwesomeIcon, About, Contact, Projects },
   data() {
     return {
       homeData: {

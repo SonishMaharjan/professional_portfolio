@@ -160,6 +160,9 @@ export default {
         .icon {
           margin: 0 0.5rem;
           color: #fff;
+          height: 1.5rem;
+          width: 1.5rem;
+
           &:hover {
             cursor: pointer;
             color: $custom-light-blue;

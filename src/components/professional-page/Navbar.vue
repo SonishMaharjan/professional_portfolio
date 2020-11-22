@@ -8,7 +8,7 @@
         <a>Menu 2</a>
       </li>
     </ul>-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary custom-navbar-top">
       <div class="container d-flex flex-row-reverse">
         <button
           class="navbar-toggler pull-right"
@@ -22,7 +22,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse custom-navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto" v-scroll-spy-active v-scroll-spy-link>
             <NavItem label="Home"></NavItem>
             <NavItem label="About"></NavItem>
@@ -64,7 +64,10 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style  lang="scss">
+.custom-navbar-top {
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.2);
+}
 span {
   color: white;
   display: block;

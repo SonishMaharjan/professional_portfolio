@@ -1,7 +1,7 @@
 <template>
   <div class="about-wrapper">
     <div class="work-with container">
-      <h3 class="work-with-title">I Work With</h3>
+      <h3 class="work-with-title">My Tech-Stack</h3>
       <ul class="work-with-list">
         <li
           class="work-with-image-wrapper"
