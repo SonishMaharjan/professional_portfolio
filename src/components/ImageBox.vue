@@ -4,7 +4,7 @@
     @mouseenter="showImgDescription = true"
     @mouseleave="showImgDescription = false"
   >
-    <img class="img-container" :src="require('@/assets/images/sonish_profile.jpg')" alt />
+    <img class="img-container" :src="getImage()" alt />
     <transition name="description">
       <div v-if="showImgDescription" class="image-description">
         <h4 class="heading">
@@ -22,8 +22,25 @@
 <script>
 export default {
   name: "ImageBox",
+  props: {
+    imageFileName: {
+      type: String,
+      default: "project_image_404.jpg"
+    }
+  },
   data: () => {
     return { showImgDescription: false };
+  },
+  methods: {
+    getImage(imageFileName) {
+      try {
+        var image = require(`@/assets/images/projects/${this.imageFileName}`);
+
+        return image;
+      } catch (error) {
+        return require("@/assets/images/projects/project_image_404.jpg");
+      }
+    }
   }
 };
 </script>

@@ -4,7 +4,7 @@
     <p class="projects-description">Here are some of my projects.</p>
 
     <div class="project-container container">
-      <ImageBox v-for="project in projectsList" :key="project.name">
+      <ImageBox v-for="project in projectsList" :key="project.name" :imageFileName="project.image">
         <template v-slot:heading>{{ project.title }}</template>
         <template v-slot:description>
           {{ project.description }}

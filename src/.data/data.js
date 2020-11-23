@@ -76,7 +76,7 @@ export default {
         "A simple social network app, for sharing posts between users by creating groups.",
       githubUrl: "https://github.com/SonishMaharjan/simple_social_network",
       demoUrl: "",
-      image: "sonish_profile.jpg"
+      image: ""
     },
     {
       name: "Web Monitoring System",
@@ -86,7 +86,7 @@ export default {
       githubUrl:
         "https://github.com/SonishMaharjan/Website-Uptime-Monitoring-System",
       demoUrl: "",
-      image: "sonish_profile.jpg"
+      image: "web_monitor.jpg"
     },
     {
       name: "Flippy Runner",
@@ -95,7 +95,7 @@ export default {
         "A pretty simple 2D tapping game, where player has to avoid obstacle while running in horizontal lane.",
       githubUrl: "https://github.com/SonishMaharjan/FlippyRunner",
       demoUrl: "",
-      image: "sonish_profile.jpg"
+      image: "flippy_runner.jpg"
     }
   ]
 };
