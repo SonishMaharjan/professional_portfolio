@@ -36,15 +36,15 @@
 //header mixins
 @mixin section-header($color) {
   font-weight: bold;
-  font-family: "Poppins", sans-serif;
   position: relative;
   text-align: left;
   color: $color;
+  margin: 1rem 0;
 
   &::before {
     content: "";
     position: absolute;
-    top: 2.4rem;
+    top: 2.3rem;
     bottom: 0;
     border-bottom: 5px solid $color;
     width: 2rem;

@@ -101,7 +101,7 @@ export default {
   }
 
   .tab-content {
-    margin: 1.5rem 0;
+    margin-top: 1.5rem;
     text-align: left;
 
     .key-value-list {

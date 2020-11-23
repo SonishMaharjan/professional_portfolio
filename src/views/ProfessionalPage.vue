@@ -9,14 +9,14 @@
       <div class="section">
         <About :aboutData="aboutData"></About>
       </div>
-      <div>
+      <div class="section">
         <Projects :projectsData="projectsData"></Projects>
       </div>
       <!-- <div>
         <h1>Header 2</h1>
         <p>blog</p>
       </div>-->
-      <div>
+      <div class="section">
         <Contact></Contact>
       </div>
     </div>
@@ -71,7 +71,9 @@ import pageData from "@/.data/data.js";
 
 export default {
   name: "ProfessionalPage",
-  //add it here FontAwesomeIcon
+
+  // add it here FontAwesomeIcon
+
   components: { Navbar, Home, About, Contact, Projects },
   data() {
     return {
@@ -100,6 +102,10 @@ export default {
     .section {
       margin: 3rem 0;
       // border: 2px solid red;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 }

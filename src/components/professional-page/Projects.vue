@@ -72,6 +72,8 @@ export default {
   }
 
   .projects-description {
+    color: #6d5acc;
+    font-size: 1.2rem;
   }
 }
 </style>

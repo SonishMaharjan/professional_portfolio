@@ -47,7 +47,7 @@ export default {
 
 <style scoped lang="scss">
 .home-wrapper {
-  min-height: 88vh;
+  min-height: 91vh;
   width: 100%;
   background-repeat: no-repeat;
   background: linear-gradient(35deg, transparent 49.8%, $primary 50%) right/
@@ -58,6 +58,7 @@ export default {
   filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.4));
   position: relative;
 
+  // margin: 1rem 0;
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
@@ -98,7 +99,6 @@ export default {
 
   .profile-text-wrapper {
     // border: 2px solid yellow;
-    font-family: "Poppins", sans-serif;
     font-size: 2rem;
     // color: #7e7d80;
     background-color: rgba(155, 155, 155, 0.1);
@@ -154,7 +154,6 @@ export default {
     .post-title {
       color: white;
       position: absolute;
-      font-family: "Poppins", sans-serif;
       bottom: -2.5rem;
       right: 0rem;
       font-size: 1rem;

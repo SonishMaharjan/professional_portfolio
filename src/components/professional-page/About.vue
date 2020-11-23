@@ -44,9 +44,10 @@ export default {
 
 <style scoped lang="scss" >
 .about-wrapper {
+  // padding-bottom: 0;
+
   .work-with-title {
     font-weight: bold;
-    font-family: "Poppins", sans-serif;
     color: $primary;
   }
   .work-with-list {
@@ -73,7 +74,7 @@ export default {
     color: #fff;
     display: flex;
     flex-direction: column;
-    padding: 2rem 3rem;
+    padding: 2rem 3rem 0rem;
 
     @include md {
       flex-direction: row;

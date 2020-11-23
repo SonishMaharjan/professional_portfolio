@@ -41,7 +41,7 @@
             </IconLink>
           </div>
 
-          <button class="btn btn-outline-light my-2 my-sm-0 resume-button" type="submit">Resume</button>
+          <!-- <button class="btn btn-outline-light my-2 my-sm-0 resume-button" type="submit">Resume</button> -->
         </div>
       </div>
     </nav>
