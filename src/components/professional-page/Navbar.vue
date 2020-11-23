@@ -26,7 +26,7 @@
           <ul class="navbar-nav mr-auto" v-scroll-spy-active v-scroll-spy-link>
             <NavItem label="Home"></NavItem>
             <NavItem label="About"></NavItem>
-            <NavItem label="Portfolio"></NavItem>
+            <NavItem label="Projects"></NavItem>
             <!-- <NavItem label="Blog"></NavItem> -->
             <NavItem label="Contact"></NavItem>
           </ul>
