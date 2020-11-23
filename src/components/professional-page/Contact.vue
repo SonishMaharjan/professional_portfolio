@@ -80,23 +80,9 @@ export default {
     .contact-section {
       .contact-description-wrapper {
         .contact-title {
-          font-weight: bold;
-          font-family: "Poppins", sans-serif;
-          position: relative;
-          text-align: left;
-          color: #fff;
-          // border: 2px solid yellow;
-          display: inline-block;
-          margin: 2rem;
-
-          &::before {
-            content: "";
-            position: absolute;
-            top: 2.5rem;
-            bottom: 0;
-            border-bottom: 5px solid #eee;
-            width: 2rem;
-          }
+          @include section-header(#fff);
+          text-align: center;
+          margin: 1rem 0;
         }
         //uncomment this if you put this in first flex item
         // .contact-description {

@@ -93,19 +93,7 @@ export default {
       }
 
       .about-me-title {
-        font-weight: bold;
-        font-family: "Poppins", sans-serif;
-        position: relative;
-        text-align: left;
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 2.5rem;
-          bottom: 0;
-          border-bottom: 5px solid #eee;
-          width: 2rem;
-        }
+        @include section-header(#fff);
       }
 
       .about-me-description {

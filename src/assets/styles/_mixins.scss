@@ -32,3 +32,21 @@
     @content;
   }
 }
+
+//header mixins
+@mixin section-header($color) {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  text-align: left;
+  color: $color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2.4rem;
+    bottom: 0;
+    border-bottom: 5px solid $color;
+    width: 2rem;
+  }
+}

@@ -10,7 +10,7 @@
         <About :aboutData="aboutData"></About>
       </div>
       <div>
-        <Projects></Projects>
+        <Projects :projectsData="projectsData"></Projects>
       </div>
       <div>
         <h1>Header 2</h1>
@@ -55,7 +55,7 @@ import About from "@/components/professional-page/About";
 import Contact from "@/components/professional-page/Contact";
 import Projects from "@/components/professional-page/Projects";
 
-import data from "@/.data/data.js";
+import pageData from "@/.data/data.js";
 
 library.add(
   faLinkedin,
@@ -76,13 +76,16 @@ export default {
   data() {
     return {
       homeData: {
-        profileImage: data.profileImage,
+        profileImage: pageData.profileImage,
         profileText: ""
       },
       aboutData: {
-        techLogos: data.techLogos,
-        skills: data.skills,
-        education: data.education
+        techLogos: pageData.techLogos,
+        skills: pageData.skills,
+        education: pageData.education
+      },
+      projectsData: {
+        projectsList: pageData.projects
       }
     };
   }

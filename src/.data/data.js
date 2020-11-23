@@ -43,6 +43,7 @@ export default {
         "Ruby",
         "Node.js",
         "Django",
+        "DRF",
         "Ruby on Rails"
       ]
     },
@@ -64,6 +65,37 @@ export default {
       startYear: "2015",
       endYear: "2020",
       college: "Tribhuvan University"
+    }
+  ],
+
+  projects: [
+    {
+      name: "Social Network",
+      title: "Social Network",
+      description:
+        "A simple social network app, for sharing posts between users by creating groups.",
+      githubUrl: "https://github.com/SonishMaharjan/simple_social_network",
+      demoUrl: "",
+      image: "sonish_profile.jpg"
+    },
+    {
+      name: "Web Monitoring System",
+      title: "Web Monitoring System",
+      description:
+        "A simple web server state monitoring application which keeps track of state of web servers and notifies the user via SMS.",
+      githubUrl:
+        "https://github.com/SonishMaharjan/Website-Uptime-Monitoring-System",
+      demoUrl: "",
+      image: "sonish_profile.jpg"
+    },
+    {
+      name: "Flippy Runner",
+      title: "Flippy Runner",
+      description:
+        "A pretty simple 2D tapping game, where player has to avoid obstacle while running in horizontal lane.",
+      githubUrl: "https://github.com/SonishMaharjan/FlippyRunner",
+      demoUrl: "",
+      image: "sonish_profile.jpg"
     }
   ]
 };

@@ -7,9 +7,9 @@
     <img class="img-container" :src="require('@/assets/images/sonish_profile.jpg')" alt />
     <transition name="description">
       <div v-if="showImgDescription" class="image-description">
-        <h2 class="heading">
+        <h4 class="heading">
           <slot name="heading"></slot>
-        </h2>
+        </h4>
 
         <div class="description">
           <slot name="description"></slot>
@@ -34,6 +34,7 @@ export default {
   height: 18rem;
   border-radius: 10px;
   position: relative;
+  margin: 2rem;
   transition: transform 0.5s ease-in-out;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.4);
 
@@ -70,6 +71,12 @@ export default {
     .heading {
       margin: 1rem;
     }
+  }
+
+  .description {
+    margin: 1rem;
+    font-size: 0.8rem;
+    // color: red;
   }
 
   &:hover {
