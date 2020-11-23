@@ -27,7 +27,7 @@
             <NavItem label="Home"></NavItem>
             <NavItem label="About"></NavItem>
             <NavItem label="Portfolio"></NavItem>
-            <NavItem label="Blog"></NavItem>
+            <!-- <NavItem label="Blog"></NavItem> -->
             <NavItem label="Contact"></NavItem>
           </ul>
 
