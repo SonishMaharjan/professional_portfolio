@@ -11,7 +11,7 @@
           role="tab"
           aria-controls="nav-main-skills"
           aria-selected="true"
-        >Main Skills</a>
+        >Skills</a>
         <a
           class="nav-item nav-link"
           id="nav-education-tab"
