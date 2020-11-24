@@ -78,12 +78,15 @@ export default {
   }
 
   .image-description {
-    // border: 2px solid yellow;
     color: white;
     text-align: center;
     position: absolute;
     top: 50%;
-    // display: none;
+
+    .heading {
+      color: #d2c6ff;
+    }
+
     transform: translateY(-50%);
     .heading {
       margin: 1rem;

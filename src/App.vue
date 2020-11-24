@@ -1,20 +1,20 @@
 <template>
   <div id="app">
-    <ProfessionalPage></ProfessionalPage>
+    <!-- <ProfessionalPage></ProfessionalPage> -->
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>-->
+    </div>-->
+    <router-view />
   </div>
 </template>
 
 <script>
-import ProfessionalPage from "@/views/ProfessionalPage";
+// import ProfessionalPage from "@/views/ProfessionalPage";
 export default {
   name: "App",
   components: {
-    ProfessionalPage
+    // ProfessionalPage
   }
 };
 </script>
