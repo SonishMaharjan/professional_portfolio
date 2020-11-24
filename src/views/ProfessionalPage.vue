@@ -2,7 +2,7 @@
   <div class="professional-page-wrapper">
     <Navbar></Navbar>
 
-    <div class="professional-page-container" v-scroll-spy="{offset: 80}">
+    <div class="professional-page-container" v-scroll-spy="{offset: 60}">
       <div class="section home-section">
         <Home :homeData="homeData"></Home>
       </div>
@@ -12,10 +12,6 @@
       <div class="section">
         <Projects :projectsData="projectsData"></Projects>
       </div>
-      <!-- <div>
-        <h1>Header 2</h1>
-        <p>blog</p>
-      </div>-->
       <div class="section">
         <Contact></Contact>
       </div>
