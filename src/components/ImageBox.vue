@@ -53,7 +53,7 @@ export default {
   position: relative;
   margin: 2rem;
   transition: transform 0.5s ease-in-out;
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
 
   &:before {
     content: "";
