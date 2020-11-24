@@ -76,7 +76,7 @@ export default {
         "A simple social network app, for sharing posts between users by creating groups.",
       githubUrl: "https://github.com/SonishMaharjan/simple_social_network",
       demoUrl: "",
-      image: ""
+      image: "social_network.jpg"
     },
     {
       name: "Web Monitoring System",
