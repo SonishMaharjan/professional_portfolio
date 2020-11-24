@@ -2,7 +2,7 @@
   <div class="professional-page-wrapper">
     <Navbar></Navbar>
 
-    <div class="professional-page-container" v-scroll-spy="{offset: 60}">
+    <div class="professional-page-container" v-scroll-spy="{offset: 80}">
       <div class="section home-section">
         <Home :homeData="homeData"></Home>
       </div>
