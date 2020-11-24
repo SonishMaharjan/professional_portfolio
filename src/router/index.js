@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import ProfessionalPage from "../views/ProfessionalPage.vue";
+// import ProfessionalPage from "../views/ProfessionalPage.vue";
 
 Vue.use(VueRouter);
 
@@ -8,7 +8,11 @@ const routes = [
   {
     path: "/",
     name: "ProfessionalPage",
-    component: ProfessionalPage
+    // component: ProfessionalPage
+    component: () =>
+      import(
+        /* webpackChunkName: "professional_page" */ "../views/ProfessionalPage.vue"
+      )
   },
   // {
   //   path: "/about",
