@@ -92,7 +92,7 @@ export default {
       height: 100%;
       width: 100%;
       object-fit: cover;
-      object-position: 65% 50%;
+      object-position: 0px 0px;
       border-radius: inherit;
     }
   }

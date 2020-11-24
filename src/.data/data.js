@@ -1,6 +1,6 @@
 export default {
   username: "Sonish",
-  profileImage: "sonish_profile.jpg",
+  profileImage: "sonish_pro.jpg",
   techLogos: [
     {
       name: "Python",
